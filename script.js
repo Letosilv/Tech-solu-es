@@ -30,3 +30,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+document.getElementById("formulario").addEventListener("submit", function(event) {
+  // Validação do nome
+  const nome = document.querySelector('input[name="nome"]');
+  if (nome.value.trim() === "") {
+    alert("Por favor, informe seu nome.");
+    nome.focus();
+    event.preventDefault();
+    return;
+  }
+
+  // Validação do e-mail
+  const email = document.querySelector('input[name="email"]');
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  if (!emailRegex.test(email.value)) {
+    alert("Por favor, informe um e-mail válido.");
+    email.focus();
+    event.preventDefault();
+    return;
+  }
+
+  // Validação da mensagem
+  const mensagem = document.querySelector('textarea[name="mensagem"]');
+  if (mensagem.value.trim() === "") {
+    alert("Por favor, descreva o serviço que você precisa.");
+    mensagem.focus();
+    event.preventDefault();
+    return;
+  }
+});
+
