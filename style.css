@@ -8,6 +8,54 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+header img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.cabecalho {
+  text-align: center;
+  padding: 20px;
+  background-color: #ba5252;
+  color: white;
+}
+
+.cabecalho h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.cabecalho h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.imagem-cabecalho {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .cabecalho h1 {
+    font-size: 1.4rem;
+  }
+
+  .cabecalho h2 {
+    font-size: 1.1rem;
+  }
+
+  .imagem-cabecalho {
+    max-width: 90%;
+  }
+}
+
+
 
 header {
   background: #ba5252;
