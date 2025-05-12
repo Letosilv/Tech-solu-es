@@ -1,24 +1,83 @@
-* { box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #ba5252; color: white; padding: 20px; text-align: center; }
-    nav { background: hsl(229, 39%, 52%); padding: 10px; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #fff; font-weight: bold; }
-    section { padding: 20px; }
-    .servico { margin-bottom: 40px; }
-    .servico h2 { color: #0d6efd; }
-    form { background: #f4f4f4; padding: 20px; border-radius: 5px; max-width: 600px; margin: auto; }
-    input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px; }
-    button { background: #0d6efd; color: white; padding: 10px 15px; border: none; border-radius: 3px; cursor: pointer; width: 100%; }
-    footer { text-align: center; padding: 20px; background: #222; color: #fff; }
+* {
+  box-sizing: border-box;
+}
 
-    @media (max-width: 768px) {
-      nav a { display: block; margin: 10px 0; }
-      header h1 { font-size: 1.5em; }
-    }
-    style{
-        width: 100px; margin-right: 50px;
-    }
-    #contato {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #ba5252;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: hsl(229, 39%, 52%);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+}
+
+.servico {
+  margin-bottom: 40px;
+}
+
+.servico h2 {
+  color: #0d6efd;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.galeria img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.responsive-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.responsive-section > div {
+  flex: 1 1 300px;
+}
+
+.botao-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#contato {
   background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 8px;
@@ -63,21 +122,37 @@ button {
 button:hover {
   background-color: #45a049;
 }
-.container {
-  width: 100%;
-  padding: 2%;
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
+  nav a {
+    display: block;
+    margin: 10px 0;
   }
 
-  .imagem {
+  .responsive-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria img {
     width: 100%;
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  .botao-whatsapp {
+    width: 100%;
+    text-align: center;
   }
 }
-
