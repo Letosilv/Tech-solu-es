@@ -210,48 +210,9 @@ footer {
     text-align: center;
   }
 }
-.container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px;
-  flex-wrap: wrap; /* Para responsividade */
-}
 
-.texto {
-  flex: 1;
-  min-width: 50px;
-}
 
-.imagem {
-  flex: 1;
-  min-width: 10px;
-}
-.container-servico {
-  display: flex;
-  align-items: flex-start;
-  gap: 5px;
-  flex-wrap: wrap; /* para ficar responsivo */
-}
 
-.imagem-esquerda {
-  width: 50%;
-  height: auto;
-  border-radius: 8px;
-}
-.imagem-servico {
-  flex: 1;
-  max-width: 300px;
-  align-self: flex-start; /* garante que a imagem fique no topo */
-  margin-top: -100px; /* sobe a imagem – ajuste conforme necessário */
-}
-
-.imagem-direita {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 
 
 
