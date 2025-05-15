@@ -8,6 +8,12 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+body {
+  background-color: gray;
+  color: white; /* garante legibilidade */
+  margin: 0;
+  font-family: Arial, sans-serif; /* ou outra fonte de sua preferência */
+}
 header img {
   max-width: 100%;
   height: auto;
@@ -19,8 +25,8 @@ header img {
 .cabecalho {
   text-align: center;
   padding: 20px;
-  background-color: #ba5252;
-  color: white;
+  background-color: gray;
+  color: black;
 }
 
 .cabecalho h1 {
@@ -58,7 +64,7 @@ header img {
 
 
 header {
-  background: #ba5252;
+  background: grey;
   color: white;
   padding: 20px;
   text-align: center;
@@ -73,7 +79,7 @@ nav {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-weight: bold;
 }
 
@@ -86,7 +92,7 @@ section {
 }
 
 .servico h2 {
-  color: #0d6efd;
+  color: black;
 }
 
 .galeria {
@@ -126,7 +132,7 @@ section {
 }
 
 #contato {
-  background-color: #f9f9f9;
+  background-color: black;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -204,3 +210,51 @@ footer {
     text-align: center;
   }
 }
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap; /* Para responsividade */
+}
+
+.texto {
+  flex: 1;
+  min-width: 50px;
+}
+
+.imagem {
+  flex: 1;
+  min-width: 10px;
+}
+.container-servico {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  flex-wrap: wrap; /* para ficar responsivo */
+}
+
+.imagem-esquerda {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+.imagem-servico {
+  flex: 1;
+  max-width: 300px;
+  align-self: flex-start; /* garante que a imagem fique no topo */
+  margin-top: -100px; /* sobe a imagem – ajuste conforme necessário */
+}
+
+.imagem-direita {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+
+
+
