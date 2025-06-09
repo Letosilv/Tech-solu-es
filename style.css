@@ -6,6 +6,54 @@
 }
 
 body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  background-color: #1c2a39; /* Azul escuro */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  margin-left: 10px;
+}
+
+.logo-img {
+  height: 200px;  /* altura desejada */
+  width: 500px;   /* largura desejada */
+  object-fit: contain; /* garante que a imagem mantenha a proporção */
+}
+
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 20px; /* <-- tamanho maior */
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff; /* Azul claro ao passar o mouse */
+}
+
+
+body {
   font-family: 'Arial', sans-serif;
   color: white;
   margin: 0;
@@ -13,19 +61,27 @@ body {
   line-height: 1.6;
   height: 100vh;
 
-  background-color: white;
-  background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80");
+  background-color:black;
+  background-image: url("img/La climatisation.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.quadro-preto {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 800px 0 20px 0; /* empurra para baixo para aparecer o fundo */
+  text-align: center; /* centraliza as imagens, opcional */
 }
 
 
 /* Cabeçalho */
 header {
   background: gray;
-  color: white;
+  color: black;
   padding: 20px;
   text-align: center;
 }
@@ -41,7 +97,7 @@ header img, .imagem-cabecalho {
   text-align: center;
   padding: 20px;
   background-color: gray;
-  color: white;
+  color: black;
 }
 
 .cabecalho h1 {
@@ -75,13 +131,13 @@ section {
 
 .servico h2 {
   font-size: 2rem;
-  color: #0057a3;
+  color: white;
   margin-bottom: 10px;
 }
 
 .servico h3 {
   font-size: 1.5rem;
-  color: #d9534f;
+  color:black;
   margin-bottom: 20px;
 }
 
@@ -131,7 +187,7 @@ section {
 .botao-whatsapp, .cta-button {
   display: inline-block;
   background-color: #25D366;
-  color: white;
+  color:black;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -147,7 +203,7 @@ section {
 
 /* Formulário */
 #contato {
-  background-color:black;
+  background-color:gray;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
