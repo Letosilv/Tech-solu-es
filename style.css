@@ -7,11 +7,20 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #fefefe;
-  color: #333;
+  color: white;
+  margin: 0;
   padding: 20px;
   line-height: 1.6;
+  height: 100vh;
+
+  background-color: white;
+  background-image: url("img/milad-fakurian-EhfeT-TNuBM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 
 /* Cabeçalho */
 header {
@@ -32,7 +41,7 @@ header img, .imagem-cabecalho {
   text-align: center;
   padding: 20px;
   background-color: gray;
-  color: black;
+  color: white;
 }
 
 .cabecalho h1 {
@@ -55,7 +64,7 @@ nav {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -138,7 +147,7 @@ section {
 
 /* Formulário */
 #contato {
-  background-color: black;
+  background-color:black;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -222,3 +231,9 @@ footer {
     font-size: 1rem;
   }
 }
+
+
+
+
+
+
